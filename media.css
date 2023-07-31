@@ -1,0 +1,61 @@
+/* ----------- for small screen devices -------------- */
+@media only screen and (max-width:700px) {
+	*{
+		transition: 0.3s;
+		-webkit-transition: 0.3s;
+		-moz-transition: 0.3s;
+		-ms-transition: 0.3s;
+		-o-transition: 0.3s;
+}
+	.header nav .logo{
+		position: fixed;
+		top: 4%;
+		left: 7%;
+	}
+	.header nav{
+		position: fixed;
+		top: 0;
+		z-index: 100;
+		display: inline-block;
+		width: 100%;
+		padding: 100px 7% 0;
+		background-color: #111;
+		text-align: right;
+}
+  .header nav .nav-links li{
+		margin: 10px 0;
+		display: block;
+}  
+	.header nav .register-btn{
+		margin: 15px 0 30px ;
+		display: inline-block;
+	}	
+	.header nav .nav-links{
+    display: none;
+  }
+  .header nav .fa-bars {
+		display: block;
+		position: fixed;
+		top: 4%;
+		right: 7%;
+		color: #fff;
+		font-size: 24px;
+		cursor: pointer;
+		transition: transform 0.5s ease-in-out;
+  }
+  .header nav .nav-links.show{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+		max-height: 500px;
+}
+}
+.header nav .register-btn {
+	display: none;
+}
+.header nav .register-btn.hide {
+	display: inline-block;
+	margin-top: 20px;
+}
+/* ----------- for small screen devices -------------- */
