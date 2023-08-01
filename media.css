@@ -73,6 +73,7 @@
 	-moz-border-radius: 30px;
 	-ms-border-radius: 30px;
 	-o-border-radius: 30px;
+  top: -20px;
 }
 .header .container .search-bar form{
 	display: block;
