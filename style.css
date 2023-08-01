@@ -6,11 +6,11 @@
 	font-family: 'Poppins', sans-serif;
 	text-decoration: none;
 	list-style: none;
-	transition: var(--main-transition);
+	/* transition: var(--main-transition); 
 	-webkit-transition: var(--main-transition);
 	-moz-transition: var(--main-transition);
 	-ms-transition: var(--main-transition);
-	-o-transition: var(--main-transition);
+	-o-transition: var(--main-transition); */
 }
 :root{
 	--main-transition:0.3s;
@@ -66,7 +66,6 @@ nav .fa-bars{
 	list-style: none;
 	display: inline-block;
 	margin: 10px 30px;
-	transition: max-height 0.5s ease-in-out;
 }
 .header nav .nav-links li a{
 	color: #fff;
@@ -111,12 +110,13 @@ nav .fa-bars{
 	box-shadow: 4px 1px 10px 1px rgba(0, 0, 0, 0.295);
 	border: 2px solid white;
 	transition: 0.5s;
+	animation: scale 1s infinite;
+	-webkit-animation: scale 1.3s infinite;
+	display: block;
 	-webkit-transition: 0.5s;
 	-moz-transition: 0.5s;
 	-ms-transition: 0.5s;
 	-o-transition: 0.5s;
-	animation: scale 1s infinite;
-	-webkit-animation: scale 1.3s infinite;
 }
 .header nav .register-btn:hover{
 	color: white ;

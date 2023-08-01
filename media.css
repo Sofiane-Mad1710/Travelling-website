@@ -1,12 +1,5 @@
 /* ----------- for small screen devices -------------- */
 @media only screen and (max-width:700px) {
-	*{
-		transition: 0.3s;
-		-webkit-transition: 0.3s;
-		-moz-transition: 0.3s;
-		-ms-transition: 0.3s;
-		-o-transition: 0.3s;
-}
 	.header nav .logo{
 		position: fixed;
 		top: 4%;
@@ -19,20 +12,22 @@
 		display: inline-block;
 		width: 100%;
 		padding: 100px 7% 0;
-		background-color: #111;
+		background-color: #222;
 		text-align: right;
+}	
+.header nav .nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.7s ease-in;
+  -webkit-transition: max-height 0.7s ease-in;
+  -moz-transition: max-height 0.7s ease-in;
+  -ms-transition: max-height 0.7s ease-in;
+  -o-transition: max-height 0.7s ease-in;
 }
-  .header nav .nav-links li{
-		margin: 10px 0;
-		display: block;
-}  
-	.header nav .register-btn{
-		margin: 15px 0 30px ;
-		display: inline-block;
-	}	
-	.header nav .nav-links{
-    display: none;
-  }
   .header nav .fa-bars {
 		display: block;
 		position: fixed;
@@ -41,21 +36,101 @@
 		color: #fff;
 		font-size: 24px;
 		cursor: pointer;
-		transition: transform 0.5s ease-in-out;
   }
   .header nav .nav-links.show{
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items: flex-end;
 		gap: 10px;
 		max-height: 500px;
 }
-}
 .header nav .register-btn {
-	display: none;
+  display: none;
+  transition:  0.4s ease;
+  margin: 20px 7%;
+  -webkit-transition:  0.4s ease;
+  -moz-transition:  0.4s ease;
+  -ms-transition:  0.4s ease;
+  -o-transition:  0.4s ease;
 }
-.header nav .register-btn.hide {
-	display: inline-block;
-	margin-top: 20px;
+.header nav .register-btn.show {
+  display: inline-block;
+  margin: 20px 7%;
 }
+.header .container h1{
+	padding-top: 200px;
+	font-size: 7vw;
+	text-shadow: 10px 10px 4px #000000f3;
+	letter-spacing: 3px;
+}
+.header .container .search-bar{
+	position: relative;
+	width: 90%;
+	margin: 30px auto;
+	padding: 20px 10px 30px;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+}
+.header .container .search-bar form{
+	display: block;
+
+}
+.header .container .search-bar form input{
+	border-bottom: 1px solid #ddd;
+	width: 100%;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+.header .container .search-bar form input::placeholder{
+	text-align: center;
+}
+.header .container .search-bar form button{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	-webkit-transform: translate(-50%, 50%);
+	-moz-transform: translate(-50%, 50%);
+	-ms-transform: translate(-50%, 50%);
+	-o-transform: translate(-50%, 50%);
+}
+
+.sub-title{
+	font-size: 6vw;
+}
+.cta{
+	padding: 15% 5%;
+}
+.cta h3{
+	font-size: 7vw;
+	line-height: 8vw;
+}
+.cta p{
+	font-size: 14px;
+}
+.cta-btn{
+	padding: 6px 15px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	margin-top: 10px;
+	font-size: 14px;
+}
+.stories div p{
+	font-size: 22px;
+}
+.about-msg{
+	font-size: 15px;
+}
+}
+
+
+
+
 /* ----------- for small screen devices -------------- */
